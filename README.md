@@ -1,30 +1,41 @@
 # egfr-inhibitor-prediction
-Modleing project - 2nd semester
-Project title: “Using the Random Forest algorithm to predict the activity of novel EGFR inhibitors in lung cancer therapy”
 
-Background
-Lung cancer, primarily non-small cell lung cancer (NSCLC), remains a leading global cause of mortality. While traditional treatments persist, targeted therapy focusing on the epidermal growth factor receptor (EGFR) is increasingly vital. Mutations in the EGFR gene lead to constitutive receptor activity and uncontrolled cell proliferation. However, rapidly evolving drug resistance necessitates the discovery of novel inhibitors. Machine learning, specifically the Random Forest algorithm, enables efficient virtual screening of chemical databases to predict the potency of molecules against resistant EGFR variants.
+* Modleing project - 2nd semester
+* Project title: “Using the Random Forest algorithm to predict the activity of novel EGFR inhibitors in lung cancer therapy”
+* Katarzyna Makowska
 
-Research Question
+## 1. Project Overview & Background
+Lung cancer, primarily non-small cell lung cancer (NSCLC), remains a leading global cause of mortality. While targeted therapy focusing on the epidermal growth factor receptor (EGFR) is vital, mutations in the EGFR gene lead to constitutive receptor activity and uncontrolled cell proliferation. Rapidly evolving drug resistance necessitates the discovery of novel inhibitors. 
+This project utilizes Machine Learning—specifically the Random Forest algorithm—to enable efficient virtual screening of chemical databases, predicting the potency of molecules against EGFR variants based exclusively on their two-dimensional chemical structure.
 
-Can a machine learning algorithm based on Random Forests accurately predict the inhibitory potency (pIC50 value) of novel chemical compounds against the mutated EGFR protein by analyzing exclusively their two-dimensional structure?
-Hypothesis: 
-I hypothesize that the Random Forest model will successfully identify hidden, non-linear relationships between the chemical structure and the biological activity of the drug. Furthermore, I hypothesize that by utilizing an ensemble of decision trees, this model will demonstrate significantly greater stability and resistance to overfitting than simpler baseline models, such as Multiple Linear Regression or a single, classic decision tree. 
+## 2. Research Question & Hypothesis
+**Question:** Can a Random Forest-based machine learning algorithm accurately predict the inhibitory potency (pIC50 value) of novel chemical compounds against the EGFR protein by analyzing solely their 2D structure?
 
-Proposed Analysis 
+**Hypothesis:** The Random Forest model will successfully identify hidden, non-linear relationships between the chemical structure and biological activity. By utilizing an ensemble of decision trees, this model will demonstrate significantly greater stability, predictive power, and resistance to overfitting compared to baseline models.
 
-To conduct this analysis, I will use the publicly available ChEMBL pharmacological database. I will retrieve a dataset of small chemical molecules that have been tested for their inhibition of the mutated EGFR protein. The key information extracted from the database will be: the one-dimensional representation of the chemical structure (SMILES format) and the empirically measured drug potency, converted to a logarithmic scale (pIC50 value). 
+## 3. Methodology & Pipeline
+The entire analytical pipeline was built using Python and automated via **Snakemake**.
 
-Planned pipeline:
-Preprocessing: Raw data from the ChEMBL database will be rigorously filtered by standard type and standardized to uniform units before calculating the pIC50. Following the removal of duplicates and missing values, I will use the RDKit cheminformatics library to convert the text-based SMILES structures into binary vectors, known as molecular fingerprints. These will serve as the mathematical input features for the model.
-Machine Learning Modeling: I will use the scikit-learn library to train a regression algorithm based on Random Forests. The model will predict the pIC50 value based on the input fingerprints.
-Model Evaluation and Tuning: To prevent overfitting and assess true generalizability, I will apply cross-validation on the training set and perform a hyperparameter grid search to find the optimal configuration of the decision trees.
-Workflow Automation: The entire analytical pipeline will be defined and automated using the Snakemake workflow management system, ensuring the full reproducibility of the experiment.
+* **Data Acquisition & Preprocessing:** Data was retrieved from the publicly available **ChEMBL** pharmacological database. Raw data was rigorously filtered by standard type, standardized to uniform units, and converted to a logarithmic scale (pIC50). 
+* **Feature Engineering:** Following the removal of duplicates and missing values, the **RDKit** cheminformatics library was used to convert text-based SMILES structures into binary vectors (Morgan Fingerprints: radius=2, 2048 bits).
+* **Machine Learning Modeling:** A Random Forest Regressor (`scikit-learn`) was trained to predict the pIC50 value based on the input fingerprints.
+* **Model Evaluation and Tuning:** Hyperparameter optimization was performed using `GridSearchCV` with 3-fold Cross-Validation to prevent overfitting and ensure true generalizability.
 
-4. Expected Output:
-The project will deliver a reproducible GitHub repository with a Snakemake pipeline. Scientific outputs include a validated predictive model and Feature Importance plots to identify structural fragments key to EGFR inhibition. 
+## 4. Key Results
+The developed machine learning pipeline successfully modeled the structure-activity relationship of EGFR inhibitors. The optimized Random Forest model achieved excellent predictive performance on the unseen test set:
+* **R-squared (R2) Score:** 0.9125
+* **Root Mean Squared Error (RMSE):** 0.4278
 
-5. Sources
+These metrics confirm that the model accurately captures complex chemical patterns and can be reliably used for the virtual screening of novel EGFR inhibitors.
+
+## 5. How to Run (Reproducibility)
+This project is fully automated using the **Snakemake** workflow management system, ensuring complete reproducibility of the experiment. 
+
+To view the execution plan (dry-run), execute the following command in the terminal:
+```bash
+snakemake -n
+
+* 6. Refereances
 C. Sha and P. C. Lee; “EGFR-Targeted Therapies: A Literature Review”; J. Clin. Med. 2024; doi: https://doi.org/10.3390/jcm13216391
 M. N. Al-Mhanna, S. A. Ghafoor, et al.; "EGFRAP: a predictive machine learning model for assessing small molecule activity against the epidermal growth factor receptor"; Journal of Biomolecular Structure and Dynamics, 2024; doi: https://doi.org/10.1080/07391102.2024.2384210 
 A. M. Gouda, et al.; "Machine Learning-Based Approach to Developing Potent EGFR Inhibitors for Breast Cancer Design, Synthesis, and In Vitro Evaluation"; ACS Omega, 2023; doi: https://doi.org/10.1021/acsomega.3c02799 
