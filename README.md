@@ -1,8 +1,8 @@
 # egfr-inhibitor-prediction
 
-* Modleing project - 2nd semester
-* Project title: “Using the Random Forest algorithm to predict the activity of novel EGFR inhibitors in lung cancer therapy”
-* Katarzyna Makowska
+## Modleing project - 2nd semester
+## Project title: “Using the Random Forest algorithm to predict the activity of novel EGFR inhibitors in lung cancer therapy”
+## Katarzyna Makowska
 
 ## 1. Project Overview & Background
 Lung cancer, primarily non-small cell lung cancer (NSCLC), remains a leading global cause of mortality. While targeted therapy focusing on the epidermal growth factor receptor (EGFR) is vital, mutations in the EGFR gene lead to constitutive receptor activity and uncontrolled cell proliferation. Rapidly evolving drug resistance necessitates the discovery of novel inhibitors. 
