@@ -22,4 +22,4 @@ rule model_training:
     output:
         "data/final_model_results.csv"
     shell:
-        "jupyter nbconvert --to notebook --execute notebooks/03_model_training_and_evaluation.ipynb"
+        "jupyter nbconvert --to notebook --execute notebooks/03_model_training.ipynb"
