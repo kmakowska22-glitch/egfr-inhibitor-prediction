@@ -35,7 +35,7 @@ To view the execution plan (dry-run), execute the following command in the termi
 ```bash
 snakemake -n
 
-* 6. Refereances
+## 6. Refereances
 C. Sha and P. C. Lee; “EGFR-Targeted Therapies: A Literature Review”; J. Clin. Med. 2024; doi: https://doi.org/10.3390/jcm13216391
 M. N. Al-Mhanna, S. A. Ghafoor, et al.; "EGFRAP: a predictive machine learning model for assessing small molecule activity against the epidermal growth factor receptor"; Journal of Biomolecular Structure and Dynamics, 2024; doi: https://doi.org/10.1080/07391102.2024.2384210 
 A. M. Gouda, et al.; "Machine Learning-Based Approach to Developing Potent EGFR Inhibitors for Breast Cancer Design, Synthesis, and In Vitro Evaluation"; ACS Omega, 2023; doi: https://doi.org/10.1021/acsomega.3c02799 
