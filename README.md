@@ -40,3 +40,6 @@ C. Sha and P. C. Lee; “EGFR-Targeted Therapies: A Literature Review”; J. Cli
 M. N. Al-Mhanna, S. A. Ghafoor, et al.; "EGFRAP: a predictive machine learning model for assessing small molecule activity against the epidermal growth factor receptor"; Journal of Biomolecular Structure and Dynamics, 2024; doi: https://doi.org/10.1080/07391102.2024.2384210 
 A. M. Gouda, et al.; "Machine Learning-Based Approach to Developing Potent EGFR Inhibitors for Breast Cancer Design, Synthesis, and In Vitro Evaluation"; ACS Omega, 2023; doi: https://doi.org/10.1021/acsomega.3c02799 
 S. S. A. Ghouri, et al.; "In silico ADMET, virtual screening and machine learning study of EGFR inhibitors"; bioRxiv, 2023; doi: https://doi.org/10.1101/2023.09.05.556125 
+J. Köster and S. Rahmann, "Snakemake—a scalable bioinformatics workflow engine," Bioinformatics, vol. 28, no. 19, pp. 2520–2522, 2012. doi: 10.1093/bioinformatics/bts480.
+G. Landrum et al., "RDKit: Open-source cheminformatics software," 2006. Available: https://www.rdkit.org/
+L. Breiman, "Random Forests," Machine Learning, vol. 45, no. 1, pp. 5–32, 2001. doi: 10.1023/A:1010933404324.
