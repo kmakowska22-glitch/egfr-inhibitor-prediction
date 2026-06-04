@@ -33,7 +33,8 @@ This project is fully automated using the **Snakemake** workflow management syst
 
 To view the execution plan (dry-run), execute the following command in the terminal:
 ```bash
-snakemake -n '''
+snakemake -n
+```
 
 ## 6. Refereances
 C. Sha and P. C. Lee; “EGFR-Targeted Therapies: A Literature Review”; J. Clin. Med. 2024; doi: https://doi.org/10.3390/jcm13216391
