@@ -37,10 +37,10 @@ snakemake -n
 ```
 
 ## 6. Refereances
-1. C. Sha and P. C. Lee; “EGFR-Targeted Therapies: A Literature Review”; J. Clin. Med. 2024; doi: https://doi.org/10.3390/jcm13216391
-2. M. N. Al-Mhanna, S. A. Ghafoor, et al.; "EGFRAP: a predictive machine learning model for assessing small molecule activity against the epidermal growth factor receptor"; Journal of Biomolecular Structure and Dynamics, 2024; doi: https://doi.org/10.1080/07391102.2024.2384210 
-3. H. Nada, A. R. Gyl, et al.; "Machine Learning-Based Approach to Developing Potent EGFR Inhibitors for Breast Cancer Design, Synthesis, and In Vitro Evaluation"; ACS Omega, 2023; doi: https://doi.org/10.1021/acsomega.3c02799 
-4. S. S. A. Ghouri, et al.; "In silico ADMET, virtual screening and machine learning study of EGFR inhibitors"; bioRxiv, 2023; doi: https://doi.org/10.1101/2023.09.05.556125 
+1. C. Sha and P. C. Lee, "EGFR-Targeted Therapies: A Literature Review," J. Clin. Med., 2024. doi: 10.3390/jcm13216391.
+2. A. Gupta, A. S. Thind, R. Purohit, "EGFRAP: a predictive machine learning model for assessing small molecule activity against the epidermal growth factor receptor," RSC Medical Chemistry, 2025. doi:10.1039/d5md00361j
+3. H. Nada, A. R. Gul, A. Elkamhawy, "Machine Learning-Based Approach to Developing Potent EGFR Inhibitors for Breast Cancer Design, Synthesis, and In Vitro Evaluation," ACS Omega, 2023. doi: 10.1021/acsomega.3c02799.
+4. R. Romero, "In silico ADMET, virtual screening and machine learning study of EGFR inhibitors," bioRxiv, 2023. doi: 10.1101/2023.09.05.556125.
 5. J. Köster and S. Rahmann, "Snakemake—a scalable bioinformatics workflow engine," Bioinformatics, vol. 28, no. 19, pp. 2520–2522, 2012. doi: 10.1093/bioinformatics/bts480.
 6. G. Landrum et al., "RDKit: Open-source cheminformatics software," 2006. Available: https://www.rdkit.org/
 7. L. Breiman, "Random Forests," Machine Learning, vol. 45, no. 1, pp. 5–32, 2001. doi: 10.1023/A:1010933404324.
