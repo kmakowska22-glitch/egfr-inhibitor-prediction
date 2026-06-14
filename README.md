@@ -43,4 +43,3 @@ snakemake -n
 4. R. Romero, "In silico ADMET, virtual screening and machine learning study of EGFR inhibitors," bioRxiv, 2023. doi: 10.1101/2023.09.05.556125.
 5. J. Köster and S. Rahmann, "Snakemake—a scalable bioinformatics workflow engine," Bioinformatics, vol. 28, no. 19, pp. 2520–2522, 2012. doi: 10.1093/bioinformatics/bts480.
 6. G. Landrum et al., "RDKit: Open-source cheminformatics", Zenodo, 2023. doi: https://doi.org/10.5281/zenodo.14535873 
-7. L. Breiman, "Random Forests," Machine Learning, vol. 45, no. 1, pp. 5–32, 2001. doi: 10.1023/A:1010933404324.
