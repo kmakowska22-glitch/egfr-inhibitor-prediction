@@ -23,8 +23,8 @@ The entire analytical pipeline was built using Python and automated via **Snakem
 
 ## 4. Key Results
 The developed machine learning pipeline successfully modeled the structure-activity relationship of EGFR inhibitors. The optimized Random Forest model achieved excellent predictive performance on the unseen test set:
-* **R-squared (R2) Score:** 0.9125
-* **Root Mean Squared Error (RMSE):** 0.4278
+* **R-squared (R2) Score:** 0.721
+* **Root Mean Squared Error (RMSE):** 0.758
 
 These metrics confirm that the model accurately captures complex chemical patterns and can be reliably used for the virtual screening of novel EGFR inhibitors.
 
